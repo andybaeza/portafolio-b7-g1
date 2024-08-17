@@ -4,19 +4,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Andrea Baeza</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Pixels&display=swap" rel="stylesheet">
+
+    <!-- Ícono de la página -->
+    <link rel="shortcut icon" href="assets/icono.png" type="image/x-icon">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
     <!-- Cabecera de mi página -->
     <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">Navbar</a>
+        <nav class="navbar fixed-top navbar-expand-md" data-bs-theme="dark">
+            <div class="container">
+                <a class="navbar-brand text-white fw-bold" href="#">Andrea</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -24,16 +35,19 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            <a class="nav-link active" href="#presentacion" aria-current="page" href="#">Sobre mi</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Features</a>
+                            <a class="nav-link" href="#habilidades">Habilidades</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Pricing</a>
+                            <a class="nav-link" href="#proyectos">Proyectos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                            <a class="nav-link" href="#testimonios">Testimonios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-disabled="true" href="#contacto">Contacto</a>
                         </li>
                     </ul>
                 </div>
@@ -41,109 +55,96 @@
         </nav>
     </header>
 
-    <main>
-        <section id="presentacion" class="container col-xxl-8 px-4 py-5">
-            <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-                <div class="col-10 col-sm-8 col-lg-6">
-                    <img src="bootstrap-themes.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes"
-                        width="700" height="500" loading="lazy">
-                </div>
-                <div class="col-lg-6">
-                    <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Responsive left-aligned hero with image
-                    </h1>
-                    <p class="lead">Quickly design and customize responsive mobile-first sites with Bootstrap, the
-                        world’s most popular front-end open source toolkit, featuring Sass variables and mixins,
-                        responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
-                    <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-                        <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">Primary</button>
-                        <button type="button" class="btn btn-outline-secondary btn-lg px-4">Default</button>
+    <main class="pb-3">
+
+        <!-- Sección de presentación -->
+        <section id="presentacion" class="container-fluid" data-bs-theme="dark">
+            <div class="container vh-100 col-xxl-8 px-4 py-5 justify-content-start align-items-center">
+                <div class="row flex-lg-row align-items-center g-5 py-5">
+                    <div class="ajustar-ancho col-lg-6 pt-5 align-items-center ">
+                        <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Andrea Baeza</h1>
+                        <p class="lead text-shadow-2">¡Hola!, Soy Andrea, estudiante de tercer semestre de Ciencias de
+                            la Computación en la Universidad Autónoma de Yucatán, y busco especializarme en Inteligencia
+                            Artificial.</p>
+                        <p class="lead">Eligo ver la belleza en la complejidad y la resolución de problemas, mi pasión
+                            por las matemáticas impulsa mis motivaciones en encontrar conocimiento en cada reto que se
+                            presente, con la intención de compartirlo a través de una pantalla.</p>
+                        <div class="d-grid gap-2 d-md-flex justify-content-md-start pt-5">
+                            <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">
+                                <a href="mailto:andreabaest@gmail.com?subject=Contacto%20-%20Portafolio" target="_blank"
+                                    rel="noopener noreferrer">Contáctame</a>
+                            </button>
+                        </div>
+
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="habilidades" iv class="container px-4 py-5">
-            <h2 class="pb-2 border-bottom">Columns with icons</h2>
+        <!-- Sección de Habilidades -->
+        <section id="habilidades" iv class="container px-4 py-5 ">
+            <!-- Título de mi sección -->
+            <h2 class="pb-2 border-bottom">Habilidades</h2>
+            <!-- Contenedor de mis cartas -->
             <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+
                 <div class="feature col">
-                    <div
-                        class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
-                        <svg class="bi" width="1em" height="1em">
-                            <use xlink:href="#collection"></use>
-                        </svg>
+                    <div class="d-inline-flex align-items-center justify-content-center rounded">
+                        <img class="habilidades" src="assets/habilidades-1.png" alt="Habilidades">
                     </div>
-                    <h3 class="fs-2 text-body-emphasis">Featured title</h3>
-                    <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another
-                        sentence and probably just keep going until we run out of words.</p>
-                    <a href="#" class="icon-link">
-                        Call to action
-                        <svg class="bi">
-                            <use xlink:href="#chevron-right"></use>
-                        </svg>
-                    </a>
+                    <h3 class="fs-2 text-body-emphasis">Programación</h3>
+                    <p>Conocimientos básicos en C y Java.</p>
                 </div>
+
                 <div class="feature col">
-                    <div
-                        class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
-                        <svg class="bi" width="1em" height="1em">
-                            <use xlink:href="#people-circle"></use>
-                        </svg>
+                    <div class="d-inline-flex align-items-center justify-content-center rounded">
+                        <img class="habilidades" src="assets/habilidades-2.png" alt="Habilidades">
                     </div>
-                    <h3 class="fs-2 text-body-emphasis">Featured title</h3>
-                    <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another
-                        sentence and probably just keep going until we run out of words.</p>
-                    <a href="#" class="icon-link">
-                        Call to action
-                        <svg class="bi">
-                            <use xlink:href="#chevron-right"></use>
-                        </svg>
-                    </a>
+                    <h3 class="fs-2 text-body-emphasis">Desarrollo Web</h3>
+                    <p>Conocimientos básicos en HTML, CSS y JS.</p>
                 </div>
+
                 <div class="feature col">
-                    <div
-                        class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3">
-                        <svg class="bi" width="1em" height="1em">
-                            <use xlink:href="#toggles2"></use>
-                        </svg>
+                    <div class="d-inline-flex align-items-center justify-content-center rounded">
+                        <img class="habilidades" src="assets/habilidades-3.png" alt="Habilidades">
                     </div>
-                    <h3 class="fs-2 text-body-emphasis">Featured title</h3>
-                    <p>Paragraph of text beneath the heading to explain the heading. We'll add onto it with another
-                        sentence and probably just keep going until we run out of words.</p>
-                    <a href="#" class="icon-link">
-                        Call to action
-                        <svg class="bi">
-                            <use xlink:href="#chevron-right"></use>
-                        </svg>
-                    </a>
+                    <h3 class="fs-2 text-body-emphasis">Trabajo en equipo</h3>
+                    <p>Implemento métodos de colaboración que permiten una mejor integración y aportación entre los
+                        integrantes.</p>
+                </div>
+
+                <div class="feature col">
+                    <div class="d-inline-flex align-items-center justify-content-center rounded">
+                        <img class="habilidades" src="assets/habilidades-4.png" alt="Habilidades">
+                    </div>
+                    <h3 class="fs-2 text-body-emphasis">Autodidacta</h3>
+                    <p>Estoy comprometida en aprender por mi cuenta y expandir mis conocimientos en el área en el que
+                        estoy enfocada.</p>
                 </div>
             </div>
         </section>
 
+        <!-- Sección de Proyectos -->
         <section id="proyectos" class="container px-4 py-5">
-            <h2 class="pb-2 border-bottom">Custom cards</h2>
+            <h2 class="pb-2 border-bottom">Proyectos</h2>
 
             <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
                 <div class="col">
                     <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
-                        style="background-image: url('unsplash-photo-1.jpg');">
+                        style="background-image: url('assets/ff-imagenes.jpg');">
                         <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-                            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Short title, long jacket</h3>
+                            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">FF: ¡Primera Página!</h3>
                             <ul class="d-flex list-unstyled mt-auto">
                                 <li class="me-auto">
-                                    <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32"
+                                    <img src="assets/fficon.png" alt="FF" width="32" height="32"
                                         class="rounded-circle border border-white">
+                                    <img src="assets/html-icon.png" alt="HTML" width="32" height="32">
+                                    <img src="assets/css-icon.png" alt="CSS" width="26" height="26">
+                                    <img src="assets/js-icon.webp" alt="JavaScript" width="32" height="32">
                                 </li>
                                 <li class="d-flex align-items-center me-3">
-                                    <svg class="bi me-2" width="1em" height="1em">
-                                        <use xlink:href="#geo-fill"></use>
-                                    </svg>
-                                    <small>Earth</small>
-                                </li>
-                                <li class="d-flex align-items-center">
-                                    <svg class="bi me-2" width="1em" height="1em">
-                                        <use xlink:href="#calendar3"></use>
-                                    </svg>
-                                    <small>3d</small>
+                                    <small><a href="https://ffabout.netlify.app/" target="_blank">¡Visítala
+                                            aquí!</a></small>
                                 </li>
                             </ul>
                         </div>
@@ -152,26 +153,19 @@
 
                 <div class="col">
                     <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
-                        style="background-image: url('unsplash-photo-2.jpg');">
-                        <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-                            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Much longer title that wraps to multiple
-                                lines</h3>
-                            <ul class="d-flex list-unstyled mt-auto">
+                        style="background-image: url('assets/google-imagenes.jpg');">
+                        <div class="d-flex flex-column h-100 p-5 pb-3 text-black text-shadow-2">
+                            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Clon de Google</h3>
+                            <ul class="d-flex list-unstyled mt-auto clondegoogle">
                                 <li class="me-auto">
-                                    <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32"
+                                    <img src="assets/googleicon.webp" alt="Clon de Google" width="32" height="32"
                                         class="rounded-circle border border-white">
-                                </li>
-                                <li class="d-flex align-items-center me-3">
-                                    <svg class="bi me-2" width="1em" height="1em">
-                                        <use xlink:href="#geo-fill"></use>
-                                    </svg>
-                                    <small>Pakistan</small>
+                                    <img src="assets/html-icon.png" alt="HTML" width="32" height="32">
+                                    <img src="assets/css-icon.png" alt="CSS" width="26" height="26">
                                 </li>
                                 <li class="d-flex align-items-center">
-                                    <svg class="bi me-2" width="1em" height="1em">
-                                        <use xlink:href="#calendar3"></use>
-                                    </svg>
-                                    <small>4d</small>
+                                    <small><a href="https://clonegooglebyandybaeza.netlify.app/"
+                                            target="_blank">¡Visítalo aquí!</a></small>
                                 </li>
                             </ul>
                         </div>
@@ -180,25 +174,20 @@
 
                 <div class="col">
                     <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
-                        style="background-image: url('unsplash-photo-3.jpg');">
+                        style="background-image: url('assets/portafolio-imagenes.jpg');">
                         <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
-                            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Another longer title belongs here</h3>
+                            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Portafolio</h3>
                             <ul class="d-flex list-unstyled mt-auto">
                                 <li class="me-auto">
-                                    <img src="https://github.com/twbs.png" alt="Bootstrap" width="32" height="32"
+                                    <img src="assets/icono.png" alt="Portafolio" width="32" height="32"
                                         class="rounded-circle border border-white">
-                                </li>
-                                <li class="d-flex align-items-center me-3">
-                                    <svg class="bi me-2" width="1em" height="1em">
-                                        <use xlink:href="#geo-fill"></use>
-                                    </svg>
-                                    <small>California</small>
+                                    <img src="assets/html-icon.png" alt="HTML" width="32" height="32">
+                                    <img src="assets/css-icon.png" alt="CSS" width="26" height="26">
+                                    <img src="assets/js-icon.webp" alt="JavaScript" width="32" height="32">
                                 </li>
                                 <li class="d-flex align-items-center">
-                                    <svg class="bi me-2" width="1em" height="1em">
-                                        <use xlink:href="#calendar3"></use>
-                                    </svg>
-                                    <small>5d</small>
+                                    <small><a href="https://ffabout.netlify.app/" target="_blank">¡Visítalo
+                                            aquí!</a></small>
                                 </li>
                             </ul>
                         </div>
@@ -207,100 +196,98 @@
             </div>
         </section>
 
-        <section id="testimonios" class="carousel slide mb-6" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class=""
-                    aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"
-                    class=""></button>
-                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"
-                    class="active" aria-current="true"></button>
+        <!-- Sección de Testimonios -->
+        <section id="testimonios">
+            <h1 class="text-center my-5">Testimonios</h1>
+            <div id="myCarousel" class="carousel slide carousel-dark mb-6 carousel-fade" data-bs-theme="dark"
+                data-bs-ride="carousel">
+
+                <div class="carousel-inner">
+
+                    <div class="carousel-item active">
+                        <article class="container text-center">
+                            <img class="rounded-5" src="assets/dani-villarino.jpeg" height="200" alt="Ada Lovelace">
+                            <h3 class="my-3">Daniela Villarino</h3>
+                            <p>"Andy es una persona que representa valores como la empatía, la solidaridad, el esfuerzo
+                                y el compañerismo. Es una persona positiva e intenta transmitir esa motivación en el
+                                ambiente en el que se encuentre".</p>
+                        </article>
+                    </div>
+
+                    <div class="carousel-item">
+                        <article class="container text-center">
+                            <img class="rounded-5" src="assets/ashley.JPG" height="200" alt="Ada Lovelace">
+                            <h3 class="my-3">Ashley Alvarado</h3>
+                            <p>"A Andy siempre se le han dado las matemáticas. Siempre busca abstraer las ideas y
+                                encontrar un proceso aplicativo generalizado a partir de ello. Su pasión por su carrera
+                                la lleva a querer indagar más allá de lo visto en el salón de clases".</p>
+                        </article>
+                    </div>
+
+                    <div class="carousel-item">
+                        <article class="container text-center">
+                            <img class="rounded-5" src="assets/yaquelin-estrella.jpeg" height="200" alt="Ada Lovelace">
+                            <h3 class="my-3">Yaquelin Estrella</h3>
+                            <p>"Andrea es una estudiante destacada. Siempre está buscando aprender y aplicar lo que
+                                aprende de manera efectiva. Su compromiso con sus estudios es impresionante, y su
+                                esfuerzo constante ante los desafíos la hacen brillar.
+
+
+                                Previous
+                                ."</p>
+                        </article>
+                    </div>
+
+
+
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
-            <div class="carousel-inner">
-                <div class="carousel-item">
-                    <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
-                        aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
-                        <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
-                    </svg>
-                    <div class="container">
-                        <div class="carousel-caption text-start">
-                            <h1>Example headline.</h1>
-                            <p class="opacity-75">Some representative placeholder content for the first slide of the
-                                carousel.</p>
-                            <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
-                        aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
-                        <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
-                    </svg>
-                    <div class="container">
-                        <div class="carousel-caption">
-                            <h1>Another example headline.</h1>
-                            <p>Some representative placeholder content for the second slide of the carousel.</p>
-                            <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item active">
-                    <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
-                        aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
-                        <rect width="100%" height="100%" fill="var(--bs-secondary-color)"></rect>
-                    </svg>
-                    <div class="container">
-                        <div class="carousel-caption text-end">
-                            <h1>One more for good measure.</h1>
-                            <p>Some representative placeholder content for the third slide of this carousel.</p>
-                            <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
         </section>
 
     </main>
 
-    <footer>
-        <div class="container">
-            <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-                <div class="col-md-4 d-flex align-items-center">
-                    <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
-                        <svg class="bi" width="30" height="24">
-                            <use xlink:href="#bootstrap"></use>
-                        </svg>
-                    </a>
-                    <span class="mb-3 mb-md-0 text-body-secondary">© 2024 Company, Inc</span>
-                </div>
+    <footer id="contacto" class="py-3 mt-5">
+        <p class="mt-5 text-white text-center texto-gigante">
+            <i class="bi bi-file-code-fill"></i>
+        </p>
+        <h4 id="frase" class="text-white text-center mb-5">"El pintor que en nada duda, pocos progresos hará en el arte"
+        </h4>
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+            <li class="nav-item fs-1 ">
+                <a href="https://github.com/andybaeza/" target="_blank" class="nav-link px-5 text-body-secondary">
+                    <i class="bi bi-github text-white"></i>
+                </a>
+            </li>
 
-                <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-                    <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24">
-                                <use xlink:href="#twitter"></use>
-                            </svg></a></li>
-                    <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24">
-                                <use xlink:href="#instagram"></use>
-                            </svg></a></li>
-                    <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24">
-                                <use xlink:href="#facebook"></use>
-                            </svg></a></li>
-                </ul>
-            </footer>
-        </div>
+            <li class="nav-item fs-1">
+                <a href="https://www.linkedin.com/in/andrea-baeza-42b980323/" target="_blank"
+                    class="nav-link px-5 text-body-secondary">
+                    <i class="bi bi-linkedin text-white"></i>
+                </a>
+            </li>
+            <li class="nav-item fs-1 ">
+                <a href="https://www.instagram.com/andybaezaa?igsh=MTB1cWRuNGU2em9zeA%3D%3D&utm_source=qr"
+                    target="_blank" class="nav-link px-5 text-body-secondary">
+                    <i class="bi bi-instagram text-white"></i>
+                </a>
+            </li>
+        </ul>
+        <p class="text-center text-white">© 2024 Andrea, TECHNOLOCHICAS PRO</p>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+        </script>
 
-    <script>
-
-    </script>
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
 </body>
 
 </html>
